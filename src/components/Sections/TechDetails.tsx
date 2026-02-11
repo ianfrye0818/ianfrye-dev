@@ -1,9 +1,9 @@
-import { TechDetails } from '@/lib/types';
+import { TechDetails as TechDetailsType } from '@/lib/types';
 import { ImageWrapper } from '../ImageWrapper';
 import { Link } from '../Link';
 import Typography from '../Typeography';
 
-export function TechDetails({ label, url, logo, darkModeLogo }: TechDetails) {
+export function TechDetails({ label, url, logo, darkModeLogo }: TechDetailsType) {
   return (
     <div className='flex flex-col items-center gap-2'>
       <Link

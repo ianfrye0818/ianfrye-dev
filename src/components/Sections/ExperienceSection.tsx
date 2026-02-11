@@ -6,7 +6,7 @@ import { ExperienceDetails } from './ExperienceDetails';
 
 export function ExperienceSection() {
   return (
-    <Container className='bg-gray-50'>
+    <Container className='bg-gray-50 dark:bg-slate-900'>
       <div className='flex flex-col items-center gap-4'>
         <div className='self-center'>
           <Tag label='Experience' />

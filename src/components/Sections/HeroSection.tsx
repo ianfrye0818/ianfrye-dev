@@ -13,10 +13,10 @@ export function HeroSection() {
             <img
               src={'/images/ian-headshot.jpeg'}
               alt='Headshot of Ian'
-              className='absolute z-10 h-[280px] w-[240px] border-8 border-gray max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px]'
+              className='absolute z-10 h-[280px] w-[240px] border-8 border-gray-50 dark:border-slate-800 max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px]'
               style={{ objectFit: 'cover' }}
             />
-            <div className='absolute h-[280px] w-[280px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:right-0 md:h-[320px] md:w-[280px]'></div>
+            <div className='absolute h-[280px] w-[280px] border-8 border-transparent bg-gray-200 dark:bg-slate-700 max-md:top-5 md:bottom-0 md:right-0 md:h-[320px] md:w-[280px]'></div>
           </div>
         </div>
 
@@ -27,16 +27,17 @@ export function HeroSection() {
               Hi, I&apos;m Ian <span className='inline-block animate-waving-hand'>👋</span>
             </Typography>
             <Typography>
-              I am a dedicated and driven software enthusiast with an intense focus on mastering
-              React, JavaScript, and fundamental coding principles. Passionate about joining a
-              dynamic team that prioritizes clean code, embraces SOLID development principles, and
-              fosters an environment of innovation and growth.
+              I&apos;m a full-stack software developer who architects enterprise solutions that
+              drive real business impact. Currently leading development of business-critical systems
+              across 200+ locations, I specialize in building scalable applications using React,
+              TypeScript, .NET, and NestJS—always with a focus on clean architecture, performance
+              optimization, and delivering measurable value.
             </Typography>
           </div>
           <div className='flex flex-col gap-2'>
             <div className='flex gap-2'>
               <MapPin className='stroke-gray-600' />
-              <Typography>Winston Salem, NC</Typography>
+              <Typography>Winston-Salem, NC</Typography>
             </div>
 
             <div className='flex items-center gap-2'>
@@ -46,7 +47,7 @@ export function HeroSection() {
                   <span className='relative inline-flex h-3 w-3 rounded-full bg-emerald-500'></span>
                 </span>
               </div>
-              <Typography>Available for new projects</Typography>
+              <Typography>Open to new opportunities</Typography>
             </div>
           </div>
           <SocialIcons />

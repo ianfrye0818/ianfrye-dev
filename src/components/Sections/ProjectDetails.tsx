@@ -24,7 +24,7 @@ export function ProjectDetails({
       {/* Image */}
       <div
         className={cn(
-          'flex items-center justify-center border-gray-100 bg-gray-50 p-8 dark:bg-gray-200 max-md:rounded-t-xl md:w-1/2 lg:p-12',
+          'flex items-center justify-center border-gray-100 bg-gray-50 dark:bg-slate-900 p-8 max-md:rounded-t-xl md:w-1/2 lg:p-12',
           layoutType === 'default'
             ? 'md:rounded-l-xl md:border-r'
             : 'md:order-last md:rounded-r-xl md:border-l',
@@ -53,7 +53,7 @@ export function ProjectDetails({
       >
         <Typography
           variant='subtitle'
-          className='font-semibold text-gray-900'
+          className='font-semibold'
         >
           {name}
         </Typography>
@@ -71,7 +71,7 @@ export function ProjectDetails({
             <Link
               href={url}
               noCustomization
-              className='self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500'
+              className='self-start rounded-lg p-1.5 hover:bg-gray-50 dark:hover:bg-slate-800 [&_svg]:stroke-gray-500 dark:[&_svg]:stroke-gray-200'
               externalLink
             >
               <ExternalLink />
@@ -80,7 +80,7 @@ export function ProjectDetails({
           {videoUrl && (
             <Link
               href={videoUrl}
-              className='self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500'
+              className='self-start rounded-lg p-1.5 hover:bg-gray-50 dark:hover:bg-slate-800 [&_svg]:stroke-gray-500 dark:[&_svg]:stroke-gray-200'
               externalLink
             >
               <VideoIcon />

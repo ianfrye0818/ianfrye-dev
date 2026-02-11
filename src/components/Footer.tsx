@@ -3,7 +3,7 @@ import Typography from './Typeography';
 
 export function Footer() {
   return (
-    <footer className='w-full bg-gray-50 py-6'>
+    <footer className='w-full bg-gray-50 dark:bg-slate-950 py-6'>
       <div className='flex items-center justify-center gap-1'>
         <Typography
           className='flex items-center'

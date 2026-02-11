@@ -4,8 +4,6 @@ import LogoDart from '/public/images/logos/icon-dart.svg';
 import LogoFlutter from '/public/images/logos/icon-flutter.svg';
 import LogoGit from '/public/images/logos/icon-git.svg';
 import LogoGithub from '/public/images/logos/icon-github.svg';
-import LogoJava from '/public/images/logos/icon-java.svg';
-import LogoMongoDB from '/public/images/logos/icon-mongodb.svg';
 import LogoNestJS from '/public/images/logos/icon-nest.svg';
 import LogoNodejs from '/public/images/logos/icon-nodejs.svg';
 import LogoPostgreSQL from '/public/images/logos/icon-postgresql.svg';
@@ -19,7 +17,7 @@ import LogoDotNet from '/public/images/logos/logo-dotnet.svg';
 import LogoLinux from '/public/images/logos/logo-linux.svg';
 import LogoSheetz from '/public/images/logos/logo-sheetz.svg';
 import LogoSpectrum from '/public/images/logos/logo-spectrum.svg';
-import LogoSpringBoot from '/public/images/logos/logo-springboot.svg';
+import LogoSQLServer from '/public/images/logos/logo-sqlserver.svg'; // You'll need to add this
 import LogoTheResource from '/public/images/logos/logo-the_resource.png';
 import LogoTheResourceDark from '/public/images/logos/logo-the_resource_dark.png';
 import QualityOilLogo from '/public/images/logos/quality_oil_logo.png';
@@ -40,7 +38,7 @@ import {
 } from '@/lib/types';
 
 export const EXTERNAL_LINKS = {
-  GITHUB: 'mhttps://github.com/ianfrye0818',
+  GITHUB: 'https://github.com/ianfrye0818',
   GITHUB_REPO: 'https://github.com/ianfrye0818/personal-site',
   TWITTER: 'https://twitter.com/ianfrye818',
   LINKEDIN: 'https://www.linkedin.com/in/ianfrye3/',
@@ -93,7 +91,6 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoTailwindcss,
     url: 'https://tailwindcss.com/',
   },
-
   {
     label: 'Node.js',
     logo: LogoNodejs,
@@ -104,24 +101,26 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoNestJS,
     url: 'https://nestjs.com/',
   },
-
   {
     label: 'PostgreSQL',
     logo: LogoPostgreSQL,
     url: 'https://www.postgresql.org/',
   },
   {
-    label: 'MongoDB',
-    logo: LogoMongoDB,
-    url: 'https://www.mongodb.com/',
+    label: 'SQL Server',
+    logo: LogoSQLServer, // Add SQL Server logo
+    url: 'https://www.microsoft.com/en-us/sql-server',
   },
-
+  // {
+  //   label: 'MongoDB',
+  //   logo: LogoMongoDB,
+  //   url: 'https://www.mongodb.com/',
+  // },
   {
     label: 'Prisma',
     logo: LogoPrisma,
     url: 'https://www.prisma.io/',
   },
-
   {
     label: 'Git',
     logo: LogoGit,
@@ -143,26 +142,6 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://www.docker.com/',
   },
   {
-    label: 'Dart',
-    logo: LogoDart,
-    url: 'https://dart.dev/',
-  },
-  {
-    label: 'Flutter',
-    logo: LogoFlutter,
-    url: 'https://flutter.dev/',
-  },
-  {
-    label: 'Spring Boot',
-    logo: LogoSpringBoot,
-    url: 'https://spring.io/projects/spring-boot',
-  },
-  {
-    label: 'Java',
-    logo: LogoJava,
-    url: 'https://www.java.com/',
-  },
-  {
     label: 'C#',
     logo: LogoCSharp,
     url: 'https://docs.microsoft.com/en-us/dotnet/csharp/',
@@ -172,6 +151,26 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoDotNet,
     url: 'https://dotnet.microsoft.com/',
   },
+  {
+    label: 'Dart',
+    logo: LogoDart,
+    url: 'https://dart.dev/',
+  },
+  {
+    label: 'Flutter',
+    logo: LogoFlutter,
+    url: 'https://flutter.dev/',
+  },
+  // {
+  //   label: 'Spring Boot',
+  //   logo: LogoSpringBoot,
+  //   url: 'https://spring.io/projects/spring-boot',
+  // },
+  // {
+  //   label: 'Java',
+  //   logo: LogoJava,
+  //   url: 'https://www.java.com/',
+  // },
 ];
 
 export const PROJECTS: ProjectDetails[] = [
@@ -266,17 +265,17 @@ export const EXPERIENCES: ExperienceDetails[] = [
     logo: QualityOilLogo,
     darkModeLogo: QualityOilLogo,
     logoAlt: 'Quality Oil Company',
-    position: 'Full Stack Developer',
+    position: 'Programmer Analyst',
     startDate: new Date('2024-09-30'),
     currentlyWorkHere: true,
     summary:
-      'I am a passionate full-stack software developer with extensive experience building robust web applications and managing full project lifecycles. I’ve worked on key projects that optimize business processes for both internal teams and clients. My technical expertise spans across various tech stacks and databases, with a focus on delivering seamless and efficient solutions. I also contribute to IT administration and data-driven reporting.',
-
+      'Lead development and maintenance of business-critical systems supporting fuel operations across 200+ retail locations. Architect full-stack solutions that automate business processes, improve operational efficiency, and enable data-driven decision-making.',
     bulletPoints: [
-      'Lead development and project management for CRM, ERP, and Ticketing Systems. ',
-      'Work closely with executives and stakeholders to deliver high-quality software solutions.',
-      'Conduct weekly stakeholder meetings to present progress updates and design changes.',
-      'Utilize SQL Server, Postgres, and MySQL for business intelligence and executive reporting',
+      'Develop and maintain multiple enterprise systems including ticketing platforms, inventory monitoring, and business intelligence tools',
+      'Architect solutions using clean architecture patterns and CQRS, ensuring scalable and maintainable codebases',
+      'Collaborate with executive leadership, operations, and technical teams to translate business requirements into technical solutions',
+      'Implement real-time integrations with third-party systems and APIs to streamline business workflows',
+      'Utilize SQL Server and PostgreSQL for business intelligence reporting and data analytics',
     ],
   },
   {
@@ -285,14 +284,14 @@ export const EXPERIENCES: ExperienceDetails[] = [
     logoAlt: 'The Resource',
     position: 'IT Admin/Recruiter',
     startDate: new Date('2022-07-01'),
-    endDate: new Date('2025-09-30'),
+    endDate: new Date('2024-09-30'),
     currentlyWorkHere: false,
     summary: '',
     bulletPoints: [
-      'Successfully matched candidates with client job requirements, enhancing hiring outcomes.',
-      'Streamlined onboarding processes and maintained documentation for new hires.',
-      'Fostered strong client and candidate relationships to enhance collaboration and trust.',
-      'Identified process gaps and implemented innovative solutions to improve operational efficiency.',
+      'Successfully matched candidates with client job requirements, enhancing hiring outcomes',
+      'Streamlined onboarding processes and maintained documentation for new hires',
+      'Fostered strong client and candidate relationships to enhance collaboration and trust',
+      'Identified process gaps and implemented innovative solutions to improve operational efficiency',
       'Provided IT support and developed strategies to align technology with business objectives',
     ],
   },
@@ -304,10 +303,10 @@ export const EXPERIENCES: ExperienceDetails[] = [
     endDate: new Date('2022-07-01'),
     summary: '',
     bulletPoints: [
-      'Installed and maintained networking and communication systems, ensuring reliable connectivity.',
-      'Delivered exceptional customer service and resolved issues promptly.',
-      'Analyzed and troubleshot broadband network problems, optimizing performance and functionality.',
-      'Adhered to safety protocols and engaged in continuous learning of emerging technologies.',
+      'Installed and maintained networking and communication systems, ensuring reliable connectivity',
+      'Delivered exceptional customer service and resolved issues promptly',
+      'Analyzed and troubleshot broadband network problems, optimizing performance and functionality',
+      'Adhered to safety protocols and engaged in continuous learning of emerging technologies',
     ],
   },
   {
@@ -318,10 +317,10 @@ export const EXPERIENCES: ExperienceDetails[] = [
     endDate: new Date('2021-09-01'),
     summary: '',
     bulletPoints: [
-      'Diagnosed and repaired HVAC and refrigeration systems, optimizing costs and resources.',
-      'Communicated effectively with management regarding equipment status and repairs.',
-      'Managed inventory to ensure parts availability and performed regular equipment inspections.',
-      'Achieved 608 Universal Certification for compliance with refrigerant regulations.',
+      'Diagnosed and repaired HVAC and refrigeration systems, optimizing costs and resources',
+      'Communicated effectively with management regarding equipment status and repairs',
+      'Managed inventory to ensure parts availability and performed regular equipment inspections',
+      'Achieved 608 Universal Certification for compliance with refrigerant regulations',
     ],
   },
   {
@@ -331,16 +330,16 @@ export const EXPERIENCES: ExperienceDetails[] = [
     startDate: new Date('2014-09-01'),
     endDate: new Date('2020-07-01'),
     summary: '',
-
     bulletPoints: [
-      'Led recruitment and training of new staff, enhancing team integration and performance.',
-      'Managed a diverse team of 20-30, promoting a positive work environment and operational efficiency.',
-      'Ensured compliance with health regulations and maintained high food safety standards.',
-      'Developed financial reports, implemented cost-control measures, and drove sales initiatives.',
-      'Coordinated team-building events and special projects to foster collaboration and communication.',
+      'Led recruitment and training of new staff, enhancing team integration and performance',
+      'Managed a diverse team of 20-30, promoting a positive work environment and operational efficiency',
+      'Ensured compliance with health regulations and maintained high food safety standards',
+      'Developed financial reports, implemented cost-control measures, and drove sales initiatives',
+      'Coordinated team-building events and special projects to foster collaboration and communication',
     ],
   },
 ];
+
 export const TESTIMONIALS: TestimonialDetails[] = [];
 
 export const CONTACT_INFO: ContactInfo = {

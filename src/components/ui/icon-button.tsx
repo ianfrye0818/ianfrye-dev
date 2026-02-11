@@ -3,7 +3,7 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import * as React from 'react';
 
 const iconButtonVariants = cva(
-  'flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&_svg]:stroke-gray-600 [&_svg]:hover:stroke-gray-700',
+  'flex justify-center items-center hover:bg-gray-100 dark:hover:bg-slate-700 active:bg-gray-200 dark:active:bg-slate-600 rounded-lg p-1.5 transition-colors duration-200 [&_svg]:stroke-gray-600 [&_svg]:hover:stroke-gray-700 dark:[&_svg]:stroke-gray-200 dark:[&_svg]:hover:stroke-gray-50',
   {
     variants: {
       size: {
@@ -31,13 +31,13 @@ const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
   ) => {
     return (
       <button
-        className={cn('relative', iconButtonVariants({ size }), className)}
+        className={cn('relative cursor-pointer', iconButtonVariants({ size }), className)}
         ref={ref}
         {...props}
       >
         {children}
         {showTooltip && tooltipText.length > 0 && (
-          <span className='absolute -top-8 rounded-lg bg-gray-200 px-2 py-1 text-sm'>
+          <span className='absolute -top-8 rounded-lg bg-gray-200 dark:bg-slate-700 px-2 py-1 text-sm'>
             {tooltipText}
           </span>
         )}
